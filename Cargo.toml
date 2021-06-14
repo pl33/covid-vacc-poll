@@ -1,0 +1,19 @@
+[package]
+name = "covid-vacc-poll"
+version = "0.1.0"
+authors = ["Philipp Le <philipp-le-prviat@freenet.de>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+json = "^0.11.13"
+reqwest = "^0.10.0"
+ctrlc = "3.1.9"
+log = "0.4.14"
+simple_logger = "1.11.0"
+clap = "2.33.3"
+
+[dependencies.async-std]
+version = "^1.7.0"
+features = ["tokio02"]

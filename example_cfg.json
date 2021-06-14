@@ -1,0 +1,45 @@
+{
+    "admin_notifications": [
+        "main_gotify"
+    ],
+    "services": [
+        {
+            "provider": "booked4us",
+            "settings": {
+                "url": "https://<URL>"
+            },
+            "title": "<TITLE>",
+            "notifications": [
+                "main_gotify"
+            ],
+            "sleep": 120
+        }
+    ],
+    "notifications": {
+        "mail": {
+            "provider": "email",
+            "settings": {
+                "smtp": {
+                    "host": "mail.example.com",
+                    "port": 587,
+                    "user": "example",
+                    "password": "example",
+                    "starttls": true
+                },
+                "from": "example@example.com",
+                "to": [
+                    "example@example.com",
+                    "example@example.com"
+                ],
+                "subject": "COVID Vaccination Poll"
+            }
+        },
+        "main_gotify": {
+            "provider": "gotify",
+            "settings": {
+                "url": "<URL>",
+                "application_token": "<TOKEN>"
+            }
+        }
+    }
+}
